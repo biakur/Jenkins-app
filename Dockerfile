@@ -13,9 +13,13 @@ RUN yum install httpd
 #have to copy the application put it inside the container using copy command
 COPY index.html /var/www/html/
 COPY Simon Game /var/www/html/
-COPY sounds /var/www/html/
 COPY styles.css /var/www/html/
 COPY game.js /var/www/html/
+COPY blue.mp3 /var/www/html/
+COPY green.mp3 /var/www/html/
+COPY red.mp3 /var/www/html/
+COPY yellow.mp3 /var/www/html/
+COPY wrong.mp3 /var/www/html/
 
 # defind the port command
 EXPOSE 80
