@@ -12,7 +12,7 @@ RUN yum -y install httpd
 
 #have to copy the application put it inside the container using copy command
 COPY index.html /var/www/html/
-COPY Simon Game /var/www/html/
+#COPY Simon Game /var/www/html/
 COPY styles.css /var/www/html/
 COPY game.js /var/www/html/
 COPY blue.mp3 /var/www/html/
