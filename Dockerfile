@@ -8,7 +8,7 @@ LABEL maintainers = "DevOp team "
 RUN yum -y update && yum clean all
 
 # install httpd 'apache'
-RUN yum install httpd
+RUN yum -y install httpd
 
 #have to copy the application put it inside the container using copy command
 COPY index.html /var/www/html/
